@@ -1,0 +1,19 @@
+The model is built using data from LC, and applied to LC and LUX.
+
+There are 363 training instances.
+There are 41 test instances.
+There are 663 instances in the other site.
+
+The model is built using RandomForestRegressor, with:
+	n_estimators: 100
+	max_depth: 10
+	max_features: log2
+
+There are 77 feature used
+
+Prediction	mse	evs	r2	PCC
+CV	18176.190862751013	0.4546207235658086	0.4545741472458009	0.6744272905408073
+Train	3630.209147836533	0.8910726783943278	0.8910657389611524	0.9576708225144749
+Test	21871.710883459946	0.40080458361299476	0.4006757438008248	0.6360157465968177
+Other_site	27926.668195794868	-0.14611388221476518	-0.16371235690183128	0.0334119352921192
+
